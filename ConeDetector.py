@@ -64,7 +64,7 @@ class ConeDetector:
         cv.line(image, (int(line_right[0]*10000+line_right[2]), int(line_right[1]*10000+line_right[3])), (int(line_right[2]-line_right[0]*10000), int(line_right[3]-line_right[1]*10000)), color=(255, 0, 0), thickness=2)
         #cv.imshow('cones', image)
         #cv.imshow('edges' ,edges)
-        cv.waitKey(0)
+        #cv.waitKey(0)
         cv.imwrite('answer.png', image)
 
 # a demo of the code using the sample image in the github directory of the coding challenge
