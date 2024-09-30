@@ -60,10 +60,10 @@ class ConeDetector:
         line_right = cv.fitLine(contour_points_2, cv.DIST_L2, 0, reps=0.01, aeps=0.01)
 
         # output image with the regression lines
-        cv.line(image, (int(line_left[0]*10000+line_left[2]), int(line_left[1]*10000+line_left[3])), (int(line_left[2]-line_left[0]*10000), int(line_left[3]-line_left[1]*10000)), color=(0, 0, 255), thickness=2)
-        cv.line(image, (int(line_right[0]*10000+line_right[2]), int(line_right[1]*10000+line_right[3])), (int(line_right[2]-line_right[0]*10000), int(line_right[3]-line_right[1]*10000)), color=(0, 0, 255), thickness=2)
+        cv.line(image, (int(line_left[0]*10000+line_left[2]), int(line_left[1]*10000+line_left[3])), (int(line_left[2]-line_left[0]*10000), int(line_left[3]-line_left[1]*10000)), color=(255, 0, 0), thickness=2)
+        cv.line(image, (int(line_right[0]*10000+line_right[2]), int(line_right[1]*10000+line_right[3])), (int(line_right[2]-line_right[0]*10000), int(line_right[3]-line_right[1]*10000)), color=(255, 0, 0), thickness=2)
         #cv.imshow('cones', image)
-        cv.imshow('edges' ,edges)
+        #cv.imshow('edges' ,edges)
         cv.waitKey(0)
         cv.imwrite('answer.png', image)
 
