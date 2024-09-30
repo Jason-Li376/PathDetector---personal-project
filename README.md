@@ -13,3 +13,4 @@ The program begins by converting the image to HSV format and applying a threshol
 
 ## Methods attempted but did not use
 Initially I tried to classify the cone coordinates by their position either on the left half or on the right half of the image, which worked. But then I realized that this isn't a method that can be generalized to more complex situations, so I turned to k-means clustering.
+Another thing I tried but did not work is to directly apply Canny edge detection to the image, but that does not work well as it also detected many irrelavent edges that we do not care about. So I turned to applying masking under HSV before I do the edge detection, which worked well.
