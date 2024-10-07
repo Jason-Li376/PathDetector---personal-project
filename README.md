@@ -1,5 +1,4 @@
 # WACodeChallenge-Jason-Li
-This is the application code challenge for the perception department of Wisconsin Autonomous
 The ConeDetector class has a __call__() method that takes an image with a path marked by red cones as input, and generate an ansewr.png file with the bounaries of the path marked by red lines as output
 
 ## Libraries and the Enviorment
