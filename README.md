@@ -1,4 +1,4 @@
-# WACodeChallenge-Jason-Li
+# Path Detector
 The ConeDetector class has a __call__() method that takes an image with a path marked by red cones as input, and generate an ansewr.png file with the bounaries of the path marked by red lines as output
 
 ## Libraries and the Enviorment
